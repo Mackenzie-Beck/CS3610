@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from Document import Document
 
 class DocumentCreator(ABC):
 
@@ -6,6 +7,6 @@ class DocumentCreator(ABC):
     def factory_method() -> Document:
         pass
     
-    @abstractmethod
-    def create_document() -> str:
-        pass
+    def create_document(self) -> str:
+        doc = self.factory_method()
+        return doc.create()

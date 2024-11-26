@@ -1,7 +1,7 @@
 from Document import Document
 
-class WordDocument(Document):
+class ExcelDocument(Document):
 
     def create(self) -> str:
-        msg = "Word document has been created"
+        msg = "Excel document has been created"
         return msg
