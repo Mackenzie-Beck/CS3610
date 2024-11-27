@@ -1,22 +1,21 @@
 from Builder import Builder
-from Car import Car
-
-class CarBuilder(Builder):
+from Manual import Manual
+class ManualBuilder(Builder):
 
     def __init__(self):
         self.reset()
 
     def reset(self):
-        self.__car = Car()
+        self.__manual = Manual()
 
     def setSeats(self, number):
-        self.__car.seats = number
+        self.__manual.seats = number
 
     def setEngine(self, engine):
-        self.__car.engine = engine
+        self.__manual.engine = engine
 
     def setTripComputer(self):
-        self.__car.trip_computer = 0
+        print("ManualTripComputer")
 
     def setGps(self, location : str):
-        self.__car.gps = location
+        print("ManualGPS")
