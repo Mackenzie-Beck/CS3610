@@ -4,5 +4,5 @@ from PDFDocument import PDFDocument
 
 class PDFDocumentCreator(DocumentCreator):
 
-    def factory_method() -> Document:
+    def factory_method(self) -> Document:
         return PDFDocument()

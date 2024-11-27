@@ -2,7 +2,7 @@ from DocumentCreator import DocumentCreator
 from Document import Document
 from WordDocument import WordDocument
 
-class PDFDocumentCreator(DocumentCreator):
+class WordDocumentCreator(DocumentCreator):
 
-    def factory_method() -> Document:
+    def factory_method(self) -> Document:
         return WordDocument()
