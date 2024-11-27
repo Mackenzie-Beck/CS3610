@@ -18,5 +18,9 @@ class CarBuilder(Builder):
     def setTripComputer(self):
         self.__car.trip_computer = 0
 
-    def setGps(self, location : str):
-        self.__car.gps = location
+    def setGps(self):
+        self.__car.gps = None
+
+
+    def getResult(self) -> Car:
+        return self.__car

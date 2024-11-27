@@ -19,3 +19,7 @@ class ManualBuilder(Builder):
 
     def setGps(self, location : str):
         print("ManualGPS")
+
+
+    def getResult(self) -> Manual:
+        return self.__manual
