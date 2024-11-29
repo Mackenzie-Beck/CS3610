@@ -7,6 +7,7 @@ class DocumentCreator(ABC):
     def factory_method() -> Document:
         pass
     
+    @staticmethod
     def create_document(self) -> str:
         doc = self.factory_method()
         return doc.create()

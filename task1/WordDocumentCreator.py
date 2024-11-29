@@ -4,5 +4,6 @@ from WordDocument import WordDocument
 
 class WordDocumentCreator(DocumentCreator):
 
-    def factory_method(self) -> Document:
+    @staticmethod
+    def factory_method() -> Document:
         return WordDocument()

@@ -1,12 +1,26 @@
-from Clients import WordClient, PDFClient, ExcelClient
+from App import BronzeApp, SilverApp, GoldApp
 
-# Main uses the clients to create documents
+ #Main uses the app to create documents
 
-word_client = WordClient()
-pdf_client = PDFClient()
-excel_client = ExcelClient()
+bronze = BronzeApp()
+silver = SilverApp()
+gold = GoldApp()
 
-word_doc = word_client.new_document()
-pdf_doc = pdf_client.new_document()
-excel_doc = excel_client.new_document()
 
+# Run tests
+
+bronze.new_document("word")
+bronze.new_document("pdf")
+bronze.new_document("excel")
+
+print("--------------------------")
+
+silver.new_document("word")
+silver.new_document("pdf")
+silver.new_document("excel")
+
+print("--------------------------")
+
+gold.new_document("word")
+gold.new_document("pdf")
+gold.new_document("excel")

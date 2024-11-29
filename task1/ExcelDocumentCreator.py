@@ -4,5 +4,6 @@ from ExcelDocument import ExcelDocument
 
 class ExcelDocumentCreator(DocumentCreator):
 
-    def factory_method(self) -> Document:
+    @staticmethod
+    def factory_method() -> Document:
         return ExcelDocument()
