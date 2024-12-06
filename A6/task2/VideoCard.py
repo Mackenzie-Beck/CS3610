@@ -9,7 +9,7 @@ class VideoCard(Hardware):
         print("Monitor connection checked")
     
     def displayInfo(self, part : Hardware):
-        print(part.__name__ + " status: Good")
+        print(type(part).__name__ + " status: Good")
     
     def displayMsg(self, msg : str):
         print(msg)
